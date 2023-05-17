@@ -15,6 +15,17 @@ const saveTodos = () => {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 };
 
+const getTasksFromLocalStorage = () => {
+  try {
+    const storedTasks = localStorage.getItem('tasks');
+    tasks = storedTasks ? JSON.parse(storedTasks) : [];
+  } catch (error) {
+    console.error('Error parsing tasks from local storage:', error);
+    tasks = [];
+  }
+};
+
+getTasksFromLocalStorage();
 // Create a function that creates a new todo list item
 const createTodoListItemEl = (task) => {
   const deleteButton = document.createElement('button');
