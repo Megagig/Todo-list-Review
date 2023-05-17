@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 50%;
+  margin: 8rem auto 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(100, 100, 111, 0.2);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #999;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  margin: 20px;
+}
+
+.todo-input {
+  border: none;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #999;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+i.uil-ellipsis-v {
+  margin-left: auto;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  margin-left: -1.3rem;
+  color: #999;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.todo-input::placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+
+li:hover .delete-button {
+  display: block;
+}
+
+i {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name i {
+  color: #999;
+}
+
+button[type='submit'] {
+  background-color: transparent;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin-left: 0.5rem;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+input[type='checkbox']:checked + span {
+  text-decoration: line-through;
+}
+
+p {
+  text-align: center;
+  margin: 2rem auto 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.uil-redo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.uil-enter {
+  display: flex;
+  justify-content: flex-end;
+}
